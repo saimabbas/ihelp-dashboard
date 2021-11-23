@@ -138,7 +138,6 @@ const Home = () => {
               },
             }}
             loop="true"
-            grabCursor="true"
             slidesPerView="1"
             spaceBetween={25}
             navigation={{
