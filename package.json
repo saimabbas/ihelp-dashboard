@@ -1,0 +1,28 @@
+{
+  "name": "ihelp",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.1.1",
+    "chart.js": "^3.6.0",
+    "gsap": "^3.8.0",
+    "jquery": "^3.6.0",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "recharts": "^2.1.6",
+    "swiper": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "7",
+    "eslint-config-next": "12.0.3"
+  }
+}
