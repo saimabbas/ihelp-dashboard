@@ -1,4 +1,4 @@
-import Home from "./home";
+import Home from "./contributeNew";
 export default function App() {
   return (
     <div>

@@ -11,7 +11,8 @@
   font-size: 10px;
   --bgc: #f7f8f9;
   --white: #ffffff;
-  --black: rgba(0, 0, 0, 0.75);
+  --black: rgba(0, 0, 0, 0.85);
+  --dark: rgba(0, 0, 0, 0.5);
   --light-purple: #ac52f2; /* rgb(172, 82, 242) */
   --secondary: #ac52f2 !important; /* rgb(172, 82, 242) */
   --dark-purple: #5c0fc5; /* rgb(92, 15, 197) */
@@ -39,15 +40,26 @@ button {
   cursor: pointer;
 }
 .grd-btn {
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   color: var(--white);
   background: var(--grd);
-  padding: 0.85rem 2.25rem;
+  padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   transition: 0.5s;
 }
 .grd-btn:hover {
   box-shadow: 0 3px 5px rgba(172, 82, 242, 0.5);
+}
+.white-btn {
+  font-size: 1.5rem;
+  color: var(--light-purple);
+  background: var(--white);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.white-btn:hover {
+  box-shadow: 0 3px 5px rgba(172, 82, 242, 0.25);
 }
 .app {
   width: 100%;
@@ -95,7 +107,7 @@ button {
 .headerRight a {
   font-size: 1.5rem;
   color: var(--black);
-  font-weight: 600;
+  font-weight: 500;
 }
 .headerRight a:hover {
   color: var(--light-purple);
@@ -308,6 +320,35 @@ button {
   align-items: center;
   justify-content: center;
 }
+.table {
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  font-size: 1.35rem;
+  color: var(--black);
+}
+.table th {
+  font-weight: 600;
+  /* background-color: rgba(173, 82, 242, 0.2); */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.table tbody tr {
+  cursor: pointer;
+  transition: 0.15s;
+}
+.table tbody tr:hover {
+  background-color: rgba(173, 82, 242, 0.1);
+}
 @media screen and (max-width: 1200px) {
   .headerRight > * {
     margin: 0 0 0 1.5rem;
@@ -325,16 +366,22 @@ button {
     border-top: 0px solid var(--black);
   }
 }
-@media screen and (max-width: 800px) {
-  .headerRight a {
+@media screen and (max-width: 1000px) {
+  .table td,
+  .table th {
+    padding: 1rem;
+  }
+  .headerRight a,
+  .headerRight button {
     display: none;
   }
   .section {
     padding: 1.5rem 0;
   }
-  .grd-btn {
+  .grd-btn,
+  .white-btn {
     font-size: 1.35rem;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.25rem;
   }
   .headerContent img {
     height: 40%;
@@ -383,6 +430,12 @@ button {
     font-size: 1.65rem;
     margin: 0 0 2.5rem 0;
     color: var(--white);
+  }
+  .mob-header-content > * {
+    margin: 0 0 2.5rem 0;
+  }
+  .mob-header-content button {
+    width: 100%;
   }
   .open-mob-header {
     display: flex;

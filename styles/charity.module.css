@@ -1,0 +1,199 @@
+.charityOverviewGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  margin: 2.5rem 0 5rem 0;
+}
+.charityImageText {
+  width: 100%;
+}
+.charityImageText {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.charityImageText img {
+  width: 22.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0 1.5rem 0 0;
+}
+.charityImageText main h6 {
+  font-size: 2.25rem;
+  color: var(--light-purple);
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+.charityImageText main p {
+  font-size: 1.35rem;
+  color: var(--black);
+  font-weight: 400;
+}
+.charityTextBoxes {
+  width: 100%;
+}
+.charityTextBoxes main {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  background-color: rgba(173, 82, 242, 0.15);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.charityTextBoxes main h6 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+.videoMessagesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: auto;
+  grid-gap: 7.5rem;
+}
+.charityVideos {
+  width: 100%;
+}
+.videoMessagesGrid > div > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0 0 1.5rem 0;
+}
+.charityVideoBox {
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+}
+.charityVideoBox h6 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--black);
+}
+.charityVideoBox video {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0 0 0.25rem 0;
+}
+.charityMessages h6 {
+  font-size: 1.5rem;
+  color: var(--black);
+  font-weight: 400;
+}
+.charityMessages h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.charityMessages > main {
+  width: 100%;
+  margin: 0 0 3.5rem 0;
+}
+.Charitymessage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 1.5rem 0 0 0;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.Charitymessage svg {
+  font-size: 2.5rem;
+  color: var(--light-purple);
+  width: 4rem;
+  margin: 0.25rem 0.5rem 0 0;
+}
+.Charitymessage p {
+  font-size: 1.5rem;
+  color: var(--black);
+  transition: 0.25s;
+  width: 100%;
+}
+.charityMessageBox h6 {
+  font-size: 1.25rem;
+  color: var(--dark);
+  font-weight: 400;
+  margin: 0.25rem 0 0 0;
+}
+.charityMessageBox:hover p {
+  color: var(--light-purple);
+}
+.seeAllMessages {
+  font-size: 1.5rem;
+  color: var(--light-purple);
+  font-weight: 500;
+  margin: 2.5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  transition: 0.35s;
+}
+.seeAllMessages svg {
+  transform: translate(0.75rem, 0);
+  transition: 0.35s;
+}
+.seeAllMessages:hover > svg {
+  transform: translate(1.5rem, 0);
+}
+.charityButtonsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 7.5rem;
+}
+.charityButtonsGrid h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+  text-align: center;
+}
+.charityBtnGrd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  margin: 1.5rem 0 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .charityVideoBox video {
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .charityOverviewGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+  .videoMessagesGrid {
+    grid-gap: 3.5rem;
+  }
+  .charityTextBoxes main h6 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .videoMessagesGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+  .charityVideoBox video {
+    height: unset;
+  }
+  .charityButtonsGrid {
+    grid-gap: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .charityImageText {
+    flex-direction: column;
+  }
+  .charityImageText img {
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+    height: 17.5rem;
+  }
+}
