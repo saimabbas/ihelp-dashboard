@@ -180,7 +180,7 @@ const ContributeNew = () => {
               <h6>Wallet Nickname: </h6>
               {nickName ? (
                 <div className={st.displayName}>
-                  <span>Saim's Wallet</span>
+                  <span>Saim Wallet</span>
                   <MdEdit onClick={() => setNickName(false)} />
                 </div>
               ) : (
