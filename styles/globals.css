@@ -78,6 +78,10 @@ button {
   z-index: 10;
   position: relative;
 }
+.activeLink {
+  font-weight: 600 !important;
+  color: var(--light-purple) !important;
+}
 /* Header */
 .header {
   width: 100%;

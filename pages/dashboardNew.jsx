@@ -14,6 +14,7 @@ import {
 } from "react-icons/md";
 import { FaTwitter, FaCopy } from "react-icons/fa";
 import $ from "jquery";
+import { useRouter } from "next/router";
 import { Power4 } from "gsap/dist/gsap";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -80,6 +81,7 @@ const data = [
   },
 ];
 const ContributeNew = () => {
+  const router = useRouter();
   SwiperCore.use([Navigation, Pagination]);
   const [nickName, setNickName] = useState(true);
   useEffect(() => {
@@ -134,10 +136,34 @@ const ContributeNew = () => {
         <div className="mob-header">
           <div className="box">
             <div className="mob-header-content">
-              <Link href="/">Contribute</Link>
-              <Link href="/dashboardNew">My Dashboard</Link>
-              <Link href="/stake">Stake</Link>
-              <Link href="/leaderBoardNew">Leaderboard</Link>
+              <Link href="/" passHref={true}>
+                <a className={router.pathname == "/" ? "activeLink" : ""}>
+                  Contribute
+                </a>
+              </Link>
+              <Link href="/dashboardNew" passHref={true}>
+                <a
+                  className={
+                    router.pathname == "/dashboardNew" ? "activeLink" : ""
+                  }
+                >
+                  My Dashboard
+                </a>
+              </Link>
+              <Link href="/stake" passHref={true}>
+                <a className={router.pathname == "/stake" ? "activeLink" : ""}>
+                  Stake
+                </a>
+              </Link>
+              <Link href="/leaderBoardNew" passHref={true}>
+                <a
+                  className={
+                    router.pathname == "/leaderBoardNew" ? "activeLink" : ""
+                  }
+                >
+                  Leaderboard
+                </a>
+              </Link>
               <button className="white-btn">Ethereum Network</button>
               <button className="white-btn">Connect Wallet</button>
             </div>
@@ -149,10 +175,34 @@ const ContributeNew = () => {
               <img onClick={moveTo1} src="./assets/logo.png" alt="" />
             </Link>
             <div className="headerRight">
-              <Link href="/">Contribute</Link>
-              <Link href="/dashboardNew">My Dashboard</Link>
-              <Link href="/stake">Stake</Link>
-              <Link href="/leaderBoardNew">Leaderboard</Link>
+              <Link href="/" passHref={true}>
+                <a className={router.pathname == "/" ? "activeLink" : ""}>
+                  Contribute
+                </a>
+              </Link>
+              <Link href="/dashboardNew" passHref={true}>
+                <a
+                  className={
+                    router.pathname == "/dashboardNew" ? "activeLink" : ""
+                  }
+                >
+                  My Dashboard
+                </a>
+              </Link>
+              <Link href="/stake" passHref={true}>
+                <a className={router.pathname == "/stake" ? "activeLink" : ""}>
+                  Stake
+                </a>
+              </Link>
+              <Link href="/leaderBoardNew" passHref={true}>
+                <a
+                  className={
+                    router.pathname == "/leaderBoardNew" ? "activeLink" : ""
+                  }
+                >
+                  Leaderboard
+                </a>
+              </Link>
               <button className="grd-btn">Ethereum Network</button>
               <button className="grd-btn">Connect Wallet</button>
               <MdMenu onClick={openMobHeader} className="open-mob-header" />
